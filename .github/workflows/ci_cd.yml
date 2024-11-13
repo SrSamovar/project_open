@@ -1,0 +1,18 @@
+name: ci/cd tests
+
+on:
+   push:
+     branches: [main]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check chenges
+        uses: actions/checkout@v2
+      - name: python install
+        uses: actions/setup-python@va5
+        with:
+          pyhton-version: 3.12
+      - name: install requirements
+        run: pip install -r requirements.txt
