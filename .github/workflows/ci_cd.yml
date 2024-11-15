@@ -13,6 +13,6 @@ jobs:
       - name: python install
         uses: actions/setup-python@v5
         with:
-          pyhton-version: 3.12
+          python-version: '3.12'
       - name: install requirements
         run: pip install -r requirements.txt
