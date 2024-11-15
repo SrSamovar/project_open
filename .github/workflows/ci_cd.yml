@@ -11,7 +11,7 @@ jobs:
       - name: Check chenges
         uses: actions/checkout@v2
       - name: python install
-        uses: actions/setup-python@va5
+        uses: actions/setup-python@v5
         with:
           pyhton-version: 3.12
       - name: install requirements
